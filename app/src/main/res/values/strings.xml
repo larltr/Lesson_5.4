@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lesson5.4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_name_hero">Name hero</string>
+    <string name="text_hyphen">-</string>
+    <string name="text_last_known_location">Last known location:</string>
+    <string name="text_who_is_this">who is this</string>
+    <string name="text_first_seen_in">First seen in:</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_in_ten_dp"
+    android:backgroundTint="@color/light_gray"
+    app:cardCornerRadius="@dimen/size_in_ten_dp">
+
+    <LinearLayout
+        android:id="@+id/parentRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="@dimen/size_in_one_hundred_forty_eight"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_character_image"
+                android:layout_width="@dimen/size_in_one_hundred_fifty"
+                android:layout_height="@dimen/size_in_one_hundred_fifty"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_character_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_in_fifteen_dp"
+                android:text="@string/text_name_hero"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_in_twenty_sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_in_fifteen_dp">
+
+                <TextView
+                    android:id="@+id/item_character_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_in_fifteen_sp"
+                    tools:text="status" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_hyphen"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_in_fifteen_sp" />
+
+                <TextView
+                    android:id="@+id/item_character_species"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_in_fifteen_sp"
+                    tools:text="species" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_in_fifteen_dp"
+                android:layout_marginTop="@dimen/size_in_ten_dp"
+                android:text="@string/text_last_known_location"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/size_in_twelve_sp" />
+
+            <TextView
+                android:id="@+id/text_view_last_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_in_fifteen_dp"
+                android:text="@string/text_who_is_this"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_in_fifteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_in_fifteen_dp"
+                android:layout_marginTop="@dimen/size_in_ten_dp"
+                android:text="@string/text_first_seen_in"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/size_in_twelve_sp" />
+
+            <TextView
+                android:id="@+id/text_view_first_seen_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_in_fifteen_dp"
+                android:layout_marginBottom="@dimen/size_in_fifteen_dp"
+                android:text="@string/text_who_is_this"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_in_fifteen_sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
